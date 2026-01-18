@@ -1,6 +1,3 @@
-def print_numbers(n):
-    if n==0:
-        return
-    print_numbers(n-1)
-    print(n)
-print_numbers(5)
+fh=open("sample.txt","r")
+read1=fh.read()
+print(read1)
