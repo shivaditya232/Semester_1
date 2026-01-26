@@ -1,7 +1,12 @@
-def fun(a,b):
-    if b==0:
-        return 0
-    if b%2==0:
-        return fun(a+a,b//2)
-    return fun(a+a,b//2)+a
-print(fun(4,3))
+fh=open("sample.txt","r")
+read=fh.read()
+count=0
+s="abcdefghijklmnopqrstuvwxyz"
+for i in read:
+    if i not in s and i!="\n":
+        count+=int(i)
+print(count)
+fh=open("sample.txt","a")
+fh.write(str(count))
+
+
