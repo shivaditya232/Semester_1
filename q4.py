@@ -1,5 +1,5 @@
-def test(n):
-    if n<10:
-        return 1
-    return 1 + test(n//10)
-print(test(3267))
+fh1=open("sample.txt","r")
+fh2=open("sample2.txt","w")
+read1=fh1.read()
+for i in read1:
+    fh2.write(i)
