@@ -1,7 +1,12 @@
-def list_operation(lst):
-    if not lst:
-        return 0
-    return lst[0]+list_operation(lst[1:])
-print(list_operation([10,20,50,40,30]))
+x=input("enter the file you want to count")
+fh=open(x,"r")
+y=fh.read()
+count=0
+s=y.split()
+h="1234567890"
+for i in s:
+    if i not in h:
 
-
+        count+=1
+print(count)
+        
